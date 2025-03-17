@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog Page ✨</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer {
+            background: #333;
+            color: white;
+            padding: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        iframe {
+            border: 2px solid #333;
+            width: 80%;
+            max-width: 600px;
+            height: 350px;
+            margin-top: 10px;
+        }
+
+        img {
+            width: 80%;
+            max-width: 800px;
+            border: 2px solid #333;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Blog</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#video">YouTube Video</a></li>
+        <li><a href="#map">Cebu Eastern College</a></li>
+        <li><a href="#image-map">Interactive Campus Map</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section id="video">
+        <h2>My Favorite Educational Video</h2>
+        <iframe src=" https://youtube.com/embed/x6Pnf57wRAs?si=uJroeWgWPwsv-sGc" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section id="map">
+        <h2>Cebu Eastern College Location</h2>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.6644524682393!2d123.90247467502702!3d10.302354067738503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99916f4fbbd1b%3A0x3d118d8731e2aab1!2sCebu%20Eastern%20College!5e0!3m2!1sen!2sph!4v1710599874451!5m2!1sen!2sph" 
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <section id="image-map">
+        <h2>Interactive Campus Map - Cebu Eastern College</h2>
+        <img src="cec-campus.jpg" usemap="#cecMap" alt="Cebu Eastern College Map">
+        
+        <map name="cecMap">
+            <!-- Rectangle: Main Building -->
+            <area shape="rect" coords="150,100,400,300" href="https://cebueasterncollege.edu.ph/" alt="CEC Main Building" target="_blank">
+            
+            <!-- Circle: Library -->
+            <area shape="circle" coords="600,250,50" href="https://cec-library.tripod.com/" alt="CEC Library" target="_blank">
+        </map>
+    </section>
+
+    <section>
+        <h2>About This Blog</h2>
+        <p>This blog is all about sharing knowledge &amp; creativity! &#128512;</p>
+    </section>
+
+    <section>
+        <h2>My Favorite Emojis</h2>
+        <ul>
+            <li>&#x1F600; - Grinning Face</li>
+            <li>&#x1F680; - Rocket</li>
+            <li>&#x1F4BB; - Laptop</li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 My Blog &#9733; &#169;</p>
+</footer>
+
+</body>
+</html>
